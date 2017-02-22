@@ -1,0 +1,321 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="emergency.app.emergency.emergencyapp.Add_pateint"
+    android:background="#FFF"
+    android:id="@+id/firstLayOut">
+
+
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="0,1">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:id="@+id/backId"
+                    android:src="@drawable/main"
+                    android:contentDescription="Back Ground Image"
+                    android:layout_marginTop="-15dp" />
+
+                <Button
+                    android:layout_width="23dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/logout"
+                    android:layout_marginLeft="-70dp"
+                    android:background="@drawable/logout"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginRight="30dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/text"
+                    android:paddingLeft="80dp"
+                    android:paddingRight="80dp"
+                    android:layout_marginTop="25dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/firstNameLinear">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/fnl"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="18.5dp" />
+
+                    <EditText
+                        android:layout_width="190dp"
+                        android:layout_height="29.5dp"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/firstName"
+                        android:background="@drawable/posttext"
+                        android:layout_marginTop="18.9dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginLeft="-4dp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/lastNameLinear">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/imageView3"
+                        android:src="@drawable/lnl"
+                        android:layout_marginLeft="17dp" />
+
+                    <EditText
+                        android:layout_width="190dp"
+                        android:layout_height="29.5dp"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/lastName"
+                        android:background="@drawable/posttext"
+                        android:paddingLeft="5dp"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginTop="0.7dp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/motherNameLinear" >
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/imageView4"
+                        android:src="@drawable/mnl"
+                        android:layout_marginLeft="17dp" />
+
+                    <EditText
+                        android:layout_width="190dp"
+                        android:layout_height="29.5dp"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/motherName"
+                        android:background="@drawable/posttext"
+                        android:paddingLeft="5dp"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginTop="0.7dp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/patientIDLinear" >
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/imageView5"
+                        android:src="@drawable/pil"
+                        android:layout_marginLeft="17dp" />
+
+                    <EditText
+                        android:layout_width="190dp"
+                        android:layout_height="29.5dp"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/patientId"
+                        android:background="@drawable/posttext"
+                        android:paddingLeft="5dp"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginTop="0.7dp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addressLinear">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView6"
+                        android:src="@drawable/address"
+                        android:layout_marginLeft="17dp" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:id="@+id/address"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/spinner"
+                        android:paddingLeft="5dp"
+                        android:layout_marginRight="22dp" />
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-31dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout" >
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView7"
+                        android:src="@drawable/gender"
+                        android:layout_marginLeft="17dp" />
+
+                    <RadioGroup
+                        android:layout_width="190dp"
+                        android:layout_height="24.5dp"
+                        android:layout_marginTop="21dp"
+                        android:id="@+id/gender">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/male"
+                            android:text="Male"
+                            android:capitalize="words"
+                            android:buttonTint="#aac6ce"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="#000"
+                            android:checked="true"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/female"
+                            android:buttonTint="#aac6ce"
+                            android:text="Female"
+                            android:layout_marginLeft="90dp"
+                            android:layout_marginTop="-25dp"
+                            android:textColor="#000" />
+                    </RadioGroup>
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-31dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout2" >
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView8"
+                        android:src="@drawable/degree"
+                        android:layout_marginLeft="17dp" />
+
+                    <Spinner
+                        android:layout_width="fill_parent"
+                        android:layout_height="31dp"
+                        android:id="@+id/sit"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/spinner"
+                        android:layout_marginRight="22dp"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout3" >
+
+                    <ImageButton
+                        android:layout_width="110dp"
+                        android:layout_height="38dp"
+                        android:id="@+id/add_pateint"
+                        android:background="@drawable/send"
+                        android:layout_marginLeft="233dp"
+                        android:layout_marginTop="30dp" />
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+    </FrameLayout>
+</FrameLayout>
+

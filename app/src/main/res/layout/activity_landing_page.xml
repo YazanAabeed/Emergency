@@ -1,0 +1,144 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  tools:context=".MainActivity"
+    android:id="@+id/fl">
+
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/kitKate"
+        android:src="@drawable/screen"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backGroundId" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/tt">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="120dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imageView9"
+                        android:background="@drawable/hello"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="30dp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/user"
+                android:layout_marginTop="-5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/usericon"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="5dp" />
+
+                    <EditText
+                        android:layout_width="220dp"
+                        android:layout_height="55dp"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/username"
+                        android:background="@drawable/edit"
+                        android:autoText="false"
+                        android:layout_marginLeft="-25dp"
+                        android:paddingStart="4dp"
+                        android:textColor="#FFF"
+                        android:textColorHint="#000"
+                        android:hint="Username" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/lock"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="5dp" />
+
+                    <EditText
+                        android:layout_width="220dp"
+                        android:layout_height="55dp"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:id="@+id/password"
+                        android:background="@drawable/edit"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="-25dp"
+                        android:password="true"
+                        android:paddingStart="4dp"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:hint="Password" />
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent">
+
+                    <ImageButton
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/Login"
+                        android:background="@drawable/login"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="120dp" />
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+    </FrameLayout>
+
+
+
+</FrameLayout>
